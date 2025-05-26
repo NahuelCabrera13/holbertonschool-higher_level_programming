@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 class Square:
-    """" esta es una clase vacia"""
+    """Esta es una clase vacía que define un cuadrado."""
     pass
