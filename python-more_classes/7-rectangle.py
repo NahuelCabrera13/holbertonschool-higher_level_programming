@@ -7,11 +7,11 @@ class Rectangle:
 
     number_of_instances = 0
     number_symbol = "#"
-
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
+        Rectangle.number_symbol
 
     @property
     def width(self):
@@ -56,3 +56,4 @@ class Rectangle:
     def __del__(self):
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
+    
