@@ -14,6 +14,8 @@ class Shape(ABC):
 
 class Circle(Shape):
     def __init__(self, radius):
+        if radius < 0:
+            raise ValueError("This radio cannot a negative number")
         self.radius = radius
     
     def area(self):
