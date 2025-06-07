@@ -13,7 +13,7 @@ class Shape(ABC):
         pass
 
 class Circle(Shape):
-    
+
     def __init__(self, radius):
         self.radius = abs(radius)
     
@@ -24,9 +24,10 @@ class Circle(Shape):
         return 2 * math.pi * (self.radius)
 
 class Rectangle(Shape): 
+
     def __init__(self, width, height):
-        self.width = width
-        self.height = height
+        self.width = abs(width)
+        self.height = abs(height)
     
     def area(self):
         return self.width * self.height
@@ -34,6 +35,7 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.width + self.height)
             
-def shape_info(Shape):
-    print("Area: {}" .format(shape.area()))
-    print("perimeter: {}" .format(shape.perimeter()))
+def shape_info(shape):
+
+    print("Area: {}".format(shape.area()))
+    print("Perimeter: {}".format(shape.perimeter()))
