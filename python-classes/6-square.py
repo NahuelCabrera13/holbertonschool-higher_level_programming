@@ -2,7 +2,7 @@
 """pepe"""
 
 
-class Square:
+cla"ss Square:
     """pepe"""
 
     def __init__(self, size=0, position=(0, 0)):
@@ -49,3 +49,4 @@ class Square:
         # print each row with horizontal offset
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
+h
