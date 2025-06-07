@@ -13,10 +13,9 @@ class Shape(ABC):
         pass
 
 class Circle(Shape):
+    
     def __init__(self, radius):
-        if radius < 0:
-            raise ValueError("This radio cannot a negative number")
-        self.radius = radius
+        self.radius = radius if radius >= 0 else 0
     
     def area(self):
         return math.pi * (self.radius) ** 2
