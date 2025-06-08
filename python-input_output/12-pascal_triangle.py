@@ -4,6 +4,7 @@
 
 def pascal_triangle(n):
     """pepe"""
+
     if n <= 0:
         return []
 
