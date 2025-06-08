@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-   """pepe"""
+    """pepe"""
 
     if n <= 0:
         return []
