@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def print_square(size):
+    """pepe"""
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
 
