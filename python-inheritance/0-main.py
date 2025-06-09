@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-lookup = __import__('0-lookup').lookup
+square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
 
-class MyClass1(object):
-    pass
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-class MyClass2(object):
-    my_attr1 = 3
-    def my_meth(self):
-        pass
-
-print(lookup(MyClass1))
-print(lookup(MyClass2))
-print(lookup(int))
+new_matrix = square_matrix_simple(matrix)
+print(new_matrix)
+print(matrix)
