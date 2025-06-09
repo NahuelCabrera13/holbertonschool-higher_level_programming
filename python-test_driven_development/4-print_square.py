@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""pepe"""
+
+
 def print_square(size):
     """pepe"""
     if not isinstance(size, int):
