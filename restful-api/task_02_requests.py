@@ -5,7 +5,7 @@ import csv
 
 def fetch_and_print_posts():
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    print(r.status_code)
+    print(f"Status Code: {r.status_code}")
     if r.status_code == 200:
         pepe = r.json()
 
@@ -26,15 +26,3 @@ def fetch_and_save_posts():
          for post in data:
             write.writerow(post)
             print(post)
-
-
-
-
-
-             
-
-         
-         
-
-#fetch_and_print_post()
-fetch_and_save_posts()
