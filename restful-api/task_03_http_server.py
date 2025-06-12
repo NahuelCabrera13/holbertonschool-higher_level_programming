@@ -10,7 +10,7 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "text/palin")
             self.end_headers()
-            self.wfile.write(b"Hello, this is a simple API!.")
+            self.wfile.write(b"Hello, this is a simple API!")
 
         elif self.path == "/data":
             self.send_response(200)
