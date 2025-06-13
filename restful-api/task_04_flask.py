@@ -2,10 +2,7 @@ from flask import Flask
 from flask import jsonify
 from flask import request
 
-users ={
-    "jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
-    "john": {"username": "john", "name": "John", "age": 30, "city": "New York"},
-}
+users ={}
 
 app = Flask(__name__)
 
@@ -29,7 +26,7 @@ def get_users(usernames):
     if user:
         return jsonify(user)
     else:
-        return jsonify({"Error": "User not found"}), 404
+        return jsonify({"error": "User not found"}), 404
 
 @app.route('/add_user', methods=['POST'])
 def add_user():
