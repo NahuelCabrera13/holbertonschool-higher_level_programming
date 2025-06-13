@@ -12,7 +12,7 @@ def home():
 
 @app.route("/data", methods=["GET"])
 def data():
-    names = [user["name"] for user in users.values() if "name" in user]
+    names = [user["name"] for user in users.values() if user.get("name")]
     return jsonify(names)
 
 @app.route("/status")
@@ -40,7 +40,7 @@ def add_user():
 
     users[username] = {
         "username": username,
-        "name": user_data.get("name", ""),
+        "name": user_data.get["name"],
         "age": user_data.get("age", 0),
         "city": user_data.get("city", "")
     }
