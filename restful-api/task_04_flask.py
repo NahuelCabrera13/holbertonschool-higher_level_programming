@@ -12,7 +12,7 @@ def home():
 
 @app.route("/data", methods=["GET"])
 def data():
-    names = [data.get("name") for data in users.values() if "name" in data]
+    names = [user["name"] for user in users.values() if "name" in user]
     return jsonify(names)
 
 @app.route("/status")
