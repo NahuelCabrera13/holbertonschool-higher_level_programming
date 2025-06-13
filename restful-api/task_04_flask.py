@@ -12,8 +12,8 @@ def home():
 
 @app.route("/data", methods=["GET"])
 def data():
-    names = [user["name"] for user in users.values() if "name" in user]
-    return jsonify(names)
+    usernames = [user["username"] for user in users.values() if "username" in user]
+    return jsonify(usernames)
 
 @app.route("/status")
 def status():
@@ -31,7 +31,6 @@ def get_users(usernames):
 @app.route('/add_user', methods=['POST'])
 def add_user():
     user_data = request.get_json()
-    print(user_data)
 
     if not user_data or "username" not in user_data or not user_data["username"]:
         return jsonify({"error": "Username is required"}), 400
@@ -44,6 +43,7 @@ def add_user():
         "age": user_data.get("age", 0),
         "city": user_data.get("city", "")
     }
+    print(users)
 
     return jsonify({
         "message": "User added",
