@@ -1,2 +1,2 @@
---this scrip view all list of database
-SHOW DATABASE
+-- this scrip view all list of database
+SHOW DATABASES;
