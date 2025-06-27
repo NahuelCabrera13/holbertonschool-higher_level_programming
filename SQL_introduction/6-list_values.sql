@@ -1,2 +1,2 @@
--- This scrip enumerate a listo for a table 
-select * from first_table
+-- This scrip enumerate a listo for a table
+SELECT * FROM first_table
