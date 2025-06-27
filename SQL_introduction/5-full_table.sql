@@ -1,2 +1,2 @@
 -- This script y dont know dose wath he
-SHOW CREATE TABLE FRIST_TABLE
+SHOW CREATE TABLE frist_table
