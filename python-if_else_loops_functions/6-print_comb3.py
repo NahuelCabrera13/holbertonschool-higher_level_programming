@@ -7,4 +7,3 @@ for numbers in range(0, 10):
             print("{}{}".format(numbers, combinations))
         else:
             print("{}{}".format(numbers, combinations), end=", ")
-
