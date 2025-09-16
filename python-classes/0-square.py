@@ -2,6 +2,6 @@
 """pepe"""
 
 
-class square:
+class Square:
     """pepe"""
     pass
