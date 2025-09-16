@@ -3,4 +3,5 @@
 
 
 class square:
+    """pepe"""
     pass
