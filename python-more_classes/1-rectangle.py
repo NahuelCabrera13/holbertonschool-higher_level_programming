@@ -4,9 +4,9 @@
 
 class Rectangle:
     """pepe"""
-    def __init__(self, width, heigth):
-        self.width = width
-        self.heigth = heigth
+    def __init__(self, width=0, height=0):
+        self.__width = width
+        self.__heigth = height
 
     @property
     def width(self):
@@ -34,4 +34,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         
         self.__heigth = value
-    
