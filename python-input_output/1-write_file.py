@@ -2,7 +2,7 @@
 """pepe"""
 
 
-def write_file(filename=""):
+def write_file(filename="", text=""):
     """pepe"""
     with open(filename, "w", encoding='utf-8') as pepe:
-        print(pepe.len(), end="")
+        return pepe.write(text)
