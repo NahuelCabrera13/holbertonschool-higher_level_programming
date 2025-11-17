@@ -1,8 +1,6 @@
-{% extends 'base.html' %}
+{% include 'header.html' %}
 
-{% block title %}About Us – My Flask App{% endblock %}
+<h1>About Us</h1>
+<p>This page contains information about our Flask application.</p>
 
-{% block content %}
-  <h2>About Us</h2>
-  <p>We are learning how to build web apps with Flask and Jinja templates.</p>
-{% endblock %}
+{% include 'footer.html' %}
